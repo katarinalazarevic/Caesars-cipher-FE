@@ -66,8 +66,7 @@ export const PrimaryHeader = () => {
   return (
     <HeaderWrapper>
       <HeaderContainerWrapper>
-        <HeaderLogo />
-        <HeaderText>Photo Studio</HeaderText>
+        <HeaderText>Cezarov šifrator</HeaderText>
       </HeaderContainerWrapper>
       <LanguageSelectorWrapper>
         <StyledSelect

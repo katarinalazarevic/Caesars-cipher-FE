@@ -9,7 +9,6 @@ import { ThemeProvider } from "@mui/material";
 import { PrimaryHeader } from "./components/primary-header/primary-header";
 import { I18nextProvider } from "react-i18next";
 import  i18n  from "./i18n";
-import { PrimaryFooter } from "./components/primary-footer/primary-footer";
 import ToastList from "./components/toast-list/toast-list";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
