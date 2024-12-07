@@ -1,0 +1,88 @@
+:root {
+  --input-border-color:#969E9F;
+  --input-border-color-hover:#F2A71B;
+  --input-form-label-text:#011F26;
+  --modal-border-top:#D8D5C2;
+  --error-message:#CF1547;
+  --login-pagecontainer-background:#dad6c4;
+  --box-shadow:rgba(0, 0, 0, 0.1);
+  --login-button:#025E73;
+  --login-button-hover:#1E7B90;
+  --login-forgot-password:#969E9F;
+  --login-title:#011F26;
+  --text-color-gray: #FDFDFD;
+  --card-container-bg: #F6F5F3;
+  --secondary-button-bg: #D8D5C2;
+  --secondary-button-bg-hover: #c5c2ae;
+  --accent-bg-color:#BACBCF;
+  --accent-bg-color-hover:#a9b8bb;
+  --beige-bg-color: #F6F5F3;
+  --pretitle-txt-color :#446269;
+  --header-bg-color:#fdfdfd;
+  --logo-color:#025e73;
+  --text-color-yellow3:#FFEECD;
+  --secondary-brand-color-yellow2:#FFD689;
+  --secondary-brand-color-yellow2-hover:#ebc379;
+  --font-24-size:24px;
+  --font-36-size:36px;
+  --font-20-size:20px;
+  --font-500-weight:500px;
+  --font-400-weight:400px;
+  --font-600-weight:600;
+  --modalradius-bg-color:#FFD689;
+  --modal-bg-color:#FDFDFD;
+  --line-color:#D8D5C2;
+  --placeholder-color:#808080;
+
+
+  /* buttonM*/
+  --cancel-bg-color: white;
+  --cancel-border-color: black;
+  --cancel-text-color: black;
+  --cancel-hover-color: #f0f0f0;
+
+  --confirm-bg-color: #CF1547;
+  --confirm-border-color: transparent;
+  --confirm-text-color: white;
+  --confirm-hover-color: #830829;
+
+  --confirm-primary-over:#1E7B90;
+
+  --cancel-edit-input:#F9F9F9;
+  --cancel-edit-text:#545454
+
+  --upload-image-company:#007BFF;
+  --background-drag-over:#eee;
+  --background-drag-drop:#fafafa;
+  --border-drop-zone-over:#000;
+  --border-drop-zone-drop:#aaa;
+
+  --toast-background-red:#F8E6EB;
+  --toast-background-green:#E6F2EA;
+  --toast-background-yellow:#FCF4E6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #011F26;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+.MuiPaginationItem-root{
+  font-family: 'Poppins', sans-serif;
+}

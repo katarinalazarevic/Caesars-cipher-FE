@@ -1,0 +1,112 @@
+{
+  "name": "base-react-typescript-project",
+  "description": "A base react typescript project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Lucian Caetano"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luciancaetano/base-react-typescript-project.git"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "is-ci \"test:coverage\" \"test:jest\"",
+    "test:staged": "cross-env CI=1 react-scripts test --findRelatedTests",
+    "test:jest": "jest",
+    "test:coverage": "cross-env CI=1 yarn test:jest -- --coverage",
+    "postinstall": "husky install",
+    "cy:run": "cypress run",
+    "cy:install": "cypress install",
+    "cy:open": "cypress open",
+    "pretest:e2e:run": "yarn build",
+    "test:e2e:dev": "start-server-and-test start:cli http://localhost:3000 cy:open",
+    "test:e2e": "is-ci \"test:e2e:run\" \"test:e2e:dev\"",
+    "test:e2e:run": "start-server-and-test serve http://localhost:3000 cy:run",
+    "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
+    "serve": "serve --no-clipboard --single --listen 3000 dist",
+    "generate": "plop",
+    "validate-types": "tsc --project tsconfig.json --pretty --noEmit",
+    "validate": "yarn validate-types && yarn lint && yarn test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@headlessui/react": "^1.7.18",
+    "@hookform/resolvers": "^3.3.4",
+    "@mui/material": "^5.16.7",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@stylistic/eslint-plugin": "^1.6.2",
+    "@tailwindcss/typography": "^0.5.10",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.0",
+    "dayjs": "^1.11.10",
+    "formik": "^2.4.6",
+    "history": "^5.3.0",
+    "husky": "^9.1.5",
+    "i18next": "^23.9.0",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "intersection-observer": "^0.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "marked": "^12.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.12",
+    "react-helmet-async": "^2.0.4",
+    "react-hook-form": "^7.50.1",
+    "react-i18next": "^14.0.5",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.1",
+    "styled-components": "^6.1.12",
+    "type-fest": "^4.10.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.3",
+    "vite-tsconfig-paths": "^4.3.1",
+    "web-vitals": "^3.5.2",
+    "yup": "^1.4.0",
+    "zustand": "^4.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "browserslist": "^4.23.3",
+    "browserslist-to-esbuild": "^2.1.1"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(ts|tsx|js)": [
+      "yarn lint",
+      "npm run test:staged",
+      "git add"
+    ]
+  }
+}
