@@ -1,12 +1,13 @@
 import React from 'react';
-import { useField } from 'formik';
-import { ErrorDiv, ErrorIcon, ErrorMessage, ErrorMessageDiv, ErrorMessageExclamation, InputField, LabelText } from './input-form.styled';
+import { ErrorDiv, InputField, LabelText } from './input-form.styled';
 
 interface LabelAndInputProps {
   labelText: string;
   type?: string;
   placeholder?: string;
   disabled?: boolean; 
+  value: string | number;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const LabelAndInput: React.FC<LabelAndInputProps> = ({
@@ -14,13 +15,17 @@ const LabelAndInput: React.FC<LabelAndInputProps> = ({
   type = 'text',
   placeholder,
   disabled = false,
+  value,
+  onChange,
 }) => {
 
   return (
     <div>
       <LabelText>{labelText}</LabelText>
       <ErrorDiv>
-        <InputField type={type} placeholder={placeholder} disabled={disabled} />
+        <InputField type={type} placeholder={placeholder} disabled={disabled} 
+        value={value}
+        onChange={onChange}/>
       </ErrorDiv>
     </div>
   );

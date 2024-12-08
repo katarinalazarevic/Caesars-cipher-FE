@@ -6,8 +6,14 @@ export const MainPageWrapper = styled.div`
     height: calc(100vh - 4.3rem);
 `
 export const WrapperInput = styled.div`
+    display: flex;
     padding-top:30px ;
     padding-left: 40px;
-    width: 400px;
-    height: 300px;
+    gap: 1.5rem;
+`
+export const InputDiv = styled.div`
+
+`
+export const ContentWrapper = styled.div`
+
 `

@@ -1,6 +1,8 @@
 export const srMain = {
-  text:"Unesite tekst",
+  text:"Tekst",
   textPlaceHolder: "Unesite tekst koji zelite da šifrujete",
+  shift:"Pomeraj",
+  shiftPlaceHolder:"Unesite pomeraj",
   submit:"Šifrirajte"
 }
 
