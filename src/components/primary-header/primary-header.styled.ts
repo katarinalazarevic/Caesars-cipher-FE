@@ -2,11 +2,10 @@ import { Box } from "@mui/material";
 import styled from "styled-components";
 
 export const HeaderWrapper = styled(Box)`
-  width: 100%;
-  height: 4.25rem;
+  height: 2.25rem;
   position: sticky;
   top: -0.0625rem;
-  padding: 1rem, 2.5rem;
+  padding: 1rem 2.5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -15,14 +14,14 @@ export const HeaderWrapper = styled(Box)`
 `;
 
 export const HeaderContainerWrapper = styled(Box)`
- position: absolute;
-  top: 0.9375rem; 
-  bottom: 0; 
-  left: 2.5rem; 
+  position: absolute;
+  top: 0.9375rem;
+  bottom: 0;
+  left: 2.5rem;
   display: flex;
   align-items: center;
-  width: 12.0625rem; 
-  height: 2.25rem; 
+  height: 2.25rem;
+  width: 500px;
 `;
 
 export const HeaderLogo = styled.div`
@@ -34,8 +33,6 @@ export const HeaderLogo = styled.div`
 `;
 
 export const HeaderText = styled.div`
-  width: 9.4375rem;
-  height: 2.25rem;
   opacity: 1;
   font-size: var(--font-24-size);
   font-weight: 400;

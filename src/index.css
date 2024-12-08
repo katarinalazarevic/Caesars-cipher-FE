@@ -51,7 +51,6 @@
   --cancel-edit-input:#F9F9F9;
   --cancel-edit-text:#545454
 
-  --upload-image-company:#007BFF;
   --background-drag-over:#eee;
   --background-drag-drop:#fafafa;
   --border-drop-zone-over:#000;
@@ -60,6 +59,8 @@
   --toast-background-red:#F8E6EB;
   --toast-background-green:#E6F2EA;
   --toast-background-yellow:#FCF4E6;
+
+  --button:#C1CFA1
 }
 
 body {

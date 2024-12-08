@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
 export const LabelText = styled.label`
-  height: 1.0625rem; 
+  height: 2.0625rem; 
   width: 2.5rem; 
-  font-size: 0.875rem; 
-  font-weight: 600;
-  line-height: 1.25rem; 
+  margin-left: 1rem;
+  font-size: 1.3rem; 
+  font-weight: 500;
+  line-height: 1.55rem; 
   color: var(--input-form-label-text);
 `;
 
 export const InputField = styled.input`
   width: 100%; 
-  height: 1.5rem; 
+  height: 1.7rem; 
   border-radius: 1.25rem; 
   border: 0.125rem  solid var(--input-border-color); 
   font-size: 1rem; 
