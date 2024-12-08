@@ -6,8 +6,8 @@ interface LabelAndInputProps {
   type?: string;
   placeholder?: string;
   disabled?: boolean; 
-  value: string | number;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const LabelAndInput: React.FC<LabelAndInputProps> = ({

@@ -78,21 +78,18 @@ export const ModalContent = ({ isEdit = false, onClose }: ModalContentProps) => 
               <LabelAndInput
                 labelText={t("name")}
                 placeholder={t("namePlaceHolder")}
-                name="firstName"
               />
             </LabelAndInputDiv>
             <LabelAndInputDiv>
               <LabelAndInput
                 labelText={t("lastName")}
                 placeholder={t("lastNamePlaceHolder")}
-                name="lastName"
               />
             </LabelAndInputDiv>
             <LabelAndInputDiv>
               <LabelAndInput
                 labelText={t("email")}
                 placeholder={t("emailPlaceHolder")}
-                name="email"
                 disabled={isEdit}
               />
             </LabelAndInputDiv>
