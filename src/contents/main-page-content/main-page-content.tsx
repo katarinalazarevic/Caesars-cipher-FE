@@ -3,6 +3,7 @@ import { ContentWrapper, InputDiv, MainPageWrapper, WrapperInput } from "./main-
 import { useTranslation } from "react-i18next";
 import PrimaryButton from "src/components/button/primary-button";
 import { useState } from "react";
+import { encodeSentence } from "src/services/mainService";
 
 export const MainPageContent = () => {
     const { t } = useTranslation("main");
@@ -10,8 +11,8 @@ export const MainPageContent = () => {
     const [shiftNumber, setShiftNumber] = useState(Number);
 
     const handleOnClick = () => {
-      console.log(text, shiftNumber);
-    }
+      var response = encodeSentence(text, shiftNumber, "en-US");
+    };
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       setText(event.target.value);
