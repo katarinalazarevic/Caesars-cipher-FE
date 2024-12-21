@@ -40,15 +40,16 @@ export const HeaderText = styled.div`
   text-align: left;
 `;
 
-export const LanguageSelectorWrapper= styled.div`
-background-color:"red";
-width:auto;
-height:auto; 
-margin-right: 0.2rem;
-`
+export const LanguageSelectorWrapper = styled.div`
+  width: auto;
+  height: auto;
+  margin-right: 0.2rem;
+  margin-top: 2rem;
+  
+`;
 
 export const StyledSelect = styled.select`
-  border:none;
+border: 1px solid black;
   background: "transparent";
   color: "black";
   font-size: 1rem;

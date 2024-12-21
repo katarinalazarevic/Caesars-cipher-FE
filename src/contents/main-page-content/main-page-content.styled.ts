@@ -18,6 +18,11 @@ export const InputDiv = styled.div`
 export const ContentWrapper = styled.div`
 
 `
+export const ColumnContainer = styled.div`
+display:flex;
+flex-direction: column;
+gap:20px;
+`
 export const PrimaryButtonContainer = styled.div`
-align-self: flex-end;
+    padding-left: 50px;
 `

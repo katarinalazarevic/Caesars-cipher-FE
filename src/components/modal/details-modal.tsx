@@ -4,7 +4,7 @@ import { ArrowIcon, ArrowRectangle, CloseIcon, ContentContainer, DetailsTitle, L
 
 interface Props {
   text: string,
-  encodedText: string,
+  encodedText: string | null,
   onClose: () => void;
 }
 
