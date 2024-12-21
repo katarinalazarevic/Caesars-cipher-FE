@@ -3,7 +3,9 @@ export const srMain = {
   textPlaceHolder: "Unesite tekst koji zelite da šifrujete",
   shift:"Pomeraj",
   shiftPlaceHolder:"Unesite pomeraj",
-  submit:"Šifrirajte"
+  submit:"Šifrirajte",
+  encodedText:"Kodiran tekst",
+  details:"Detaljnije",
 }
 
 export default {

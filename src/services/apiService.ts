@@ -5,7 +5,7 @@ import { useAuthStore } from "src/store/user/useAuthStore";
 
 const VITE_API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
-axios.defaults.baseURL = "https://localhost:7193";
+axios.defaults.baseURL = "http://localhost:5268";
 
 interface CustomAxiosRequestConfig extends AxiosRequestConfig {
   _toastAdded?: boolean;
