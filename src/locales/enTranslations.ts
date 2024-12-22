@@ -3,7 +3,10 @@ export const enMain = {
   textPlaceHolder:"Enter text you want to cipher ",
   shift:"Shift",
   shiftPlaceHolder:"Enter shift number",
-  submit:"Cipher"
+  submit:"Cipher",
+  options: "Options",
+  allOptions: "All options of cipher"
+
 }
 
 export default {

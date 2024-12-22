@@ -19,10 +19,13 @@ export const ContentWrapper = styled.div`
 
 `
 export const ColumnContainer = styled.div`
-display:flex;
-flex-direction: column;
-gap:20px;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 export const PrimaryButtonContainer = styled.div`
     padding-left: 50px;
+`
+export const RightButtonDiv = styled.div
+`
 `

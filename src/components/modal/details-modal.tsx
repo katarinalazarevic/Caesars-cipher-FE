@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { ArrowIcon, ArrowRectangle, CloseIcon, ContentContainer, DetailsTitle, LetterRectangle, ModalContainer, Overlay, TextLettersContainer } from "./details-modal.styled";
 
-interface Props {
+export interface Props {
   text: string,
   encodedText: string | null,
   onClose: () => void;

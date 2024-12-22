@@ -6,6 +6,8 @@ export const srMain = {
   submit:"Šifrirajte",
   encodedText:"Kodiran tekst",
   details:"Detaljnije",
+  options: "Mogućnosti",
+  allOptions: "Sve mogućnosti kodiranja"
 }
 
 export default {

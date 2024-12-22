@@ -9,6 +9,7 @@ justify-content: center;
 width:100%;
 height:100%;
 z-index: 1000;
+background-color: rgba(0, 0, 0, 0.5);
 `
 
 export const ModalContainer = styled.div`
@@ -23,6 +24,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 border: 1px solid rgba(0,0,0,0.3);
+overflow-y: auto;
 `
 
 export const DetailsTitle = styled.div`
@@ -73,3 +75,29 @@ border-right: 1px solid transparent;
 export const ArrowIcon = styled.img`
   height: 100%;
 `;
+
+export const WordList = styled.div`
+  display: flex;
+  flex-direction: column;   
+  margin-top: 35px;
+`;
+
+export const Word = styled.div`
+  padding: 5px 0;
+  font-size: 16px;
+  color: #333;
+`;
+
+
+export const ModalContainerOptions = styled.div`
+position:relative;
+min-width:750px;
+padding: 30px;
+background-color: #a9d893;
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+border: 1px solid rgba(0,0,0,0.3);
+overflow-y: auto;
+`

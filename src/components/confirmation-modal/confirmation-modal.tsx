@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { ButtonGroup, ImageContainer, Message, ModalContent, ModalWrapper } from './confirmation-modal.styled';
 import { Typography } from '@mui/material';
 import PrimaryButton from '../button/primary-button';
-import { Overlay } from 'src/contents/create-user-account-modal/create-user-account.styled-modal';
 
 interface ConfirmationModalProps {
   icon?: string;
@@ -25,7 +24,6 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
 }) => {
   return (
     <>
-      <Overlay onClick={onCancel} />
       <ModalWrapper>
         <ModalContent >
           <ImageContainer />
